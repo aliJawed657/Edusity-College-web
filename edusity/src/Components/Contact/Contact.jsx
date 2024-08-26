@@ -6,6 +6,7 @@ import phone_icon from "../../assets/phone-icon.png"
 import location_icon from "../../assets/location-icon.png"
 import white_arrow from "../../assets/white-arrow.png"
 
+
 function Contact() {
     const [result, setResult] = React.useState("");
 
@@ -33,8 +34,9 @@ function Contact() {
     };
 
     return (
-        <div className='contact'>
-            <div className='contact-col'>
+        <div className='contact'  >
+            <div className='contact-col'  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" duration="2000">
                 <h3>Send us a message <img src={msg_icon} alt="" /></h3>
                 <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
                 <ul>
@@ -43,11 +45,12 @@ function Contact() {
                     <li><img src={location_icon} alt="" />Korangi ,Crossing <br /> Karachi</li>
                 </ul>
             </div>
-            <div className="contact-col">
+            <div className="contact-col"  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" duration="2000" >
                 <form onSubmit={onSubmit}>
                     <label>Your name</label>
                     <input type="text" name='name' placeholder='Enter your name' required />
-                    <label>Phone Nuber</label>
+                    <label>Phone Number</label>
                     <input type="tel" name="phone" placeholder='Enter your mobile number' required />
                     <label>Write your messages here</label>
                     <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>

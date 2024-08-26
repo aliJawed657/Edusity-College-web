@@ -61,7 +61,8 @@
     .about-right {
         flex-basis: 100%;
     }
-    .about h2{
+
+    .about h2 {
         max-width: 100%;
     }
 }

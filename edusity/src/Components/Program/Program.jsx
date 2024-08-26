@@ -9,7 +9,8 @@ import program_icon_3 from "../../assets/program-icon-3.png"
 
 function Program() {
     return (
-        <div className='programs' >
+        <div className='programs'   data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" duration="1500">
             <div className="program">
                 <img src={program_1} alt="" />
                 <div className="caption">
